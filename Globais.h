@@ -21,9 +21,9 @@ typedef struct Objeto {
 
 #pragma region Cálculos
 
-int Soma(int *x, int *y);
-int Maior(int *x, int *y);
-int Troca(int *x, int *y);
+int Soma(Objeto *x, Objeto *y);
+int Maior(Objeto *x, Objeto *y);
+int Troca(Objeto*x, Objeto *y);
 
 #pragma endregion
 
