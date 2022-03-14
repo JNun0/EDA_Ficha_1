@@ -12,6 +12,7 @@
 void main()
 {
 	setlocale(LC_ALL, "Portuguese");
+
 #pragma region Ficha 1 - a
 	/*int m = 300;
 	float fx = 300.60;
@@ -51,7 +52,8 @@ void main()
 #pragma endregion
 
 #pragma region Ficha 1 - b
-	
+	Objeto objetos[A];
+
 	objetos[0].tamanho = 10;
 	strcpy(objetos[0].nome, "Objeto 1");
 

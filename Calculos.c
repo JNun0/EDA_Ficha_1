@@ -11,31 +11,31 @@
 /**
 * Calcula a soma de dois valores inteiros
 */
-int Soma(int *x, int *y) {
-	return(*x + *y);
+int Soma(Objeto* x, Objeto* y) {
+	return (x->tamanho + y->tamanho);
 }
 
 /**
 * Retorna o maior de dois valores inteiros
 */
-int Maior(int *x, int *y) {
-	if (*x > *y) 
+int Maior(Objeto *x, Objeto *y) {
+	if (x->tamanho > y->tamanho) 
 	{
-		return(*x);
+		return(x->tamanho);
 	}
 	else
 	{
-		return(*y);
+		return(y->tamanho);
 	}
 }
 
 /**
 * Troca os valores de duas variáveis
 */
-int Troca(int *x, int *y) {
-	int z = *x;
-	*x = *y;
-	*y = z;
+int Troca(Objeto *x, Objeto *y) {
+	int z = x->tamanho;
+	x->tamanho = y->tamanho;
+	y->tamanho = z;
 	return 0;
 }
 #pragma endregion

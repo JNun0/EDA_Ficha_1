@@ -17,15 +17,13 @@ typedef struct Objeto {
 	char nome[A];
 }Objeto;
 
-Objeto objetos[A];
-
 #pragma endregion
 
 #pragma region Cálculos
 
-int Soma(int x, int y);
-int Maior(int x, int y);
-int Troca(int x, int y);
+int Soma(int *x, int *y);
+int Maior(int *x, int *y);
+int Troca(int *x, int *y);
 
 #pragma endregion
 
